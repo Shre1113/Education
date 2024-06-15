@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+        <listener class-name="utilities.ExtentReportUtility"/>
+    </listeners>
+  
+	<test thread-count="5" name="Chrome">
+<parameter name="browser" value="Chrome"></parameter>
+   <classes>
+      <class name="DataDriven.loginTest"/>
+    </classes>
+    
+  </test> <!-- Chrome -->
+<test thread-count="5" name="Edge">
+<parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="DataDriven.loginTest"/>
+    </classes>
+    
+  </test> <!-- Edge -->
+<test thread-count="5" name="Firefox">
+<parameter name="browser" value="Edge"></parameter>
+	
+    <classes>
+      <class name="DataDriven.loginTest"/>
+    </classes>
+    
+  </test> <!-- Firefox -->
+</suite> <!-- Suite -->
