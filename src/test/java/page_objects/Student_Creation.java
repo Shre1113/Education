@@ -127,12 +127,12 @@ public class Student_Creation extends BasePage
 	public void academic_year()
 	{
 		Select options= new Select(academic_year);
-		options.selectByVisibleText("2023-24");
+		options.selectByVisibleText("2024-25");
 	}
 	public void class_section()
 	{
 		Select options= new Select(class_section);
-		options.selectByVisibleText("Class X-A");
+		options.selectByVisibleText("Class-2-A-2024-25");
 	}
 	/*public void grade()
 	{
@@ -182,7 +182,7 @@ public class Student_Creation extends BasePage
 	}
 	public void dob()
 	{
-		dob.sendKeys("014-02-2000");
+		dob.sendKeys("14-02-2000");
 	}
 	public void blood_grp()
 	{
