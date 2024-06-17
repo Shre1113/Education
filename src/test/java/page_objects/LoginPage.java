@@ -32,7 +32,7 @@ public class LoginPage extends BasePage
 	{
 		if(username.isEnabled())
 		{
-		username.sendKeys("school_admin@rnit.com");
+		username.sendKeys("schooladmin@r.com");
 		System.out.println("Enabled");
 		}
 		else

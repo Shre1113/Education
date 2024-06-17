@@ -85,7 +85,7 @@ public class BaseTest
 	}
 	public String randomNumeric()
 	{
-		String num= RandomStringUtils.randomNumeric(5);
+		String num= RandomStringUtils.randomNumeric(9);
 		return num;
 	}
 

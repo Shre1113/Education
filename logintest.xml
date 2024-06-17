@@ -7,9 +7,10 @@
     </listeners>
   <test thread-count="5" name="Chrome">
 <parameter name="browser" value="Chrome"></parameter>  
+
 <classes>
       <class name="DataDriven.loginTest"/>
-    </classes>
+</classes>
 	
   </test> <!-- Test -->
 </suite> <!-- Suite -->
