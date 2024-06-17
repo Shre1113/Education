@@ -7,13 +7,13 @@
   <test thread-count="5" name="Chrome(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="DataDriven.loginTest">
+      <class name="TestCases.Student_creation">
         <methods>
           <include name="teardown"/>
+          <include name="student_creation_positive"/>
           <include name="setup"/>
-          <include name="loginTest" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- DataDriven.loginTest -->
+      </class> <!-- TestCases.Student_creation -->
     </classes>
   </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
