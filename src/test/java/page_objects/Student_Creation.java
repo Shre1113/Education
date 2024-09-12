@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,9 +24,9 @@ public class Student_Creation extends BasePage
 			super(driver);
 		}
     //page directions element addresses
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/aside[1]/nav[2]/div[1]/ul[1]/li[1]/div[1]/span[1]")
+	@FindBy(xpath="//p[normalize-space()=\"Student Management\"]")
 	WebElement student_man;
-	@FindBy(xpath="//a[@id=\"sub-menu-51\"]")
+	@FindBy(xpath="//p[normalize-space()=\"Students\"]")
 	WebElement student;
 	@FindBy(xpath="//button[.='Add New Student']")
 	WebElement add_student;
@@ -42,10 +43,12 @@ public class Student_Creation extends BasePage
 	WebElement stu_mobile;
 	@FindBy(name="custom_roll_number")
 	WebElement roll_num;
-	@FindBy(name="custom_academic_year")
+	
+	@FindBy(id="react-select-2-input")
 	WebElement academic_year;
-	@FindBy(name="custom_student_group")
+	@FindBy(id="react-select-3-input")
 	WebElement class_section;
+	
 	@FindBy(name="custom_grade")
 	WebElement grade;
 	@FindBy(name="custom_section_name")
@@ -60,10 +63,12 @@ public class Student_Creation extends BasePage
 	WebElement blood_gr;
 	@FindBy(name="nationality")
 	WebElement nationality;
-	@FindBy(id="submitStudentBtn")
-	WebElement sumbit;
+	@FindBy(xpath="//span[.='Opted for Hostel']")
+	WebElement opted_hostel;
+	@FindBy(xpath="//button[.='Save & Next']")
+	WebElement save_next;
 	//Guardian details element addresses
-	@FindBy(name="guardians.0.guardian")
+	@FindBy(id="react-select-4-input")
 	WebElement guardian_name;
 	@FindBy(name="guardians.0.relation")
 	WebElement relation;
@@ -88,6 +93,10 @@ public class Student_Creation extends BasePage
 	WebElement country;
 	@FindBy(xpath="//button[.='Submit']")
 	WebElement submit_final;
+	//list page
+	@FindBy(name="searchTerm")
+	WebElement search;
+	
 	
 	
 	
@@ -102,37 +111,46 @@ public class Student_Creation extends BasePage
 	}
 	public void student_creation_page()
 	{
-		add_student.click();
+		
+		add_student.click();	
 	}
 	//Actions for student details
-	public void name()
+	public void name(String First_Name, String Middle_Name, String Last_Name)
 	{
-		FN.sendKeys("Maha");
-		MN.sendKeys("Parvathi");
-		LN.sendKeys("Ganesha");
+		FN.sendKeys(First_Name);
+		MN.sendKeys(Middle_Name);
+		LN.sendKeys(Last_Name);
 	}
-	public void mail()
+	/*public void name()
 	{
-		stu_email.sendKeys("maha@student.com");
-		
+		FN.sendKeys("sripriya");
+		//MN.sendKeys("Parvathi");
+		//LN.sendKeys("Ganesha");
+	}*/
+	public void mail(String Student_Email_Address)
+	{
+		stu_email.sendKeys(Student_Email_Address);
 	}
-	public void mobilenumber()
+	public void mobilenumber(String Mobile_Number)
 	{
-		stu_mobile.sendKeys("7746957103");
+		stu_mobile.sendKeys(Mobile_Number);
 	}
-	public void RollNumber()
+	public void RollNumber(String Roll_Number)
 	{
-		roll_num.sendKeys("Shiva_02");
+		roll_num.sendKeys(Roll_Number);
 	}
-	public void academic_year()
+	public void academic_year(String Academic_Year)
 	{
-		Select options= new Select(academic_year);
-		options.selectByVisibleText("2024-25");
+		//Select options= new Select(academic_year);
+		//options.selectByVisibleText(Academic_Year);
+		academic_year.sendKeys(Academic_Year);
 	}
-	public void class_section()
+	public void class_section(String Class_Section)
 	{
-		Select options= new Select(class_section);
-		options.selectByVisibleText("Class-2-A-2024-25");
+		//Select options= new Select(class_section);
+		//options.selectByVisibleText(Class_Section);
+		class_section.sendKeys(Class_Section);
+		class_section.sendKeys(Keys.ENTER);
 	}
 	/*public void grade()
 	{
@@ -160,7 +178,7 @@ public class Student_Creation extends BasePage
         // Assert that the value is as expected
         Assert.assertEquals(autoPopulatedValue, "A", "The auto-populated value is incorrect!");
 	}*/
-	public void enroll_date()
+	/*public void enroll_date()
 	{
 		// Get today's date
         Date today = new Date();
@@ -173,29 +191,49 @@ public class Student_Creation extends BasePage
 		enrollment_date.sendKeys(formattedDate);
 		enrollment_date.sendKeys(Keys.ENTER);
 		
+	}*/	
+	public void enroll_date(String Enrollment_Date)
+	{
+		enrollment_date.sendKeys(Enrollment_Date);
+		//enrollment_date.sendKeys(Keys.ENTER);
+		
 	}
-	
-	public void gender()
+	public void gender(String Gender)
 	{
 		Select options= new Select(gender);
-		options.selectByVisibleText("Male");
+		options.selectByVisibleText(Gender);
 	}
-	public void dob()
+	public void dob(String Date_of_Birth)
 	{
-		dob.sendKeys("14-02-2000");
+		dob.sendKeys(Date_of_Birth);
+		//dob.sendKeys(Keys.ENTER);
+		
+		  //  JavascriptExecutor js = (JavascriptExecutor) driver;
+		    //js.executeScript("arguments[0].setAttribute('value', '" + Date_of_Birth + "')", enrollment_date);
+		
 	}
-	public void blood_grp()
-	{
-		Select options= new Select(blood_gr);
-		options.selectByVisibleText("O+");
+	public void blood_grp(String Blood_Group) {
+	    Select options = new Select(blood_gr);
+	    options.selectByVisibleText(Blood_Group);
 	}
-	public void nationality()
+	public void nationality(String Nationality) throws InterruptedException
 	{
-		nationality.sendKeys("Indian");
+		nationality.sendKeys(Keys.CLEAR);
+		Thread.sleep(2000);
+		nationality.sendKeys(Nationality);
 	}
-	public void sumbit()
+	public void hostel(String Opted_hostel)
 	{
-	sumbit.click();
+		String a="Yes";
+		if(Opted_hostel.equals(a))
+		{
+			opted_hostel.click();	
+		}
+		
+	}
+	public void Save_Next()
+	{
+		save_next.click();
     }
 	public void validation()
 	{
@@ -207,23 +245,30 @@ public class Student_Creation extends BasePage
 		{
 			System.out.println("please look at student details, somethine went wrong");
 		}
-		
+		//Assert.assertTrue(addmore.isEnabled(), "Add More button should be enabled.");
 	}
 	//Actions for Guardian details
-	public void guardian() throws InterruptedException
+	public void guardian(String Guardian_Name) throws InterruptedException
 	{
-		Select options= new Select(guardian_name);
-		Thread.sleep(2000);
+		//Select options= new Select(guardian_name);
+		//Thread.sleep(2000);
+		//guardian_name.sendKeys("Parent A - 7798080818");
+		//guardian_name.sendKeys(Keys.ENTER);
 		
 		//options.selectByVisibleText("Ram");
-		options.selectByIndex(1);
+		//options.selectByIndex(1);
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(guardian_name));
+	    guardian_name.sendKeys(Guardian_Name);
+	    guardian_name.sendKeys(Keys.ENTER);
+		
 	}
-	public void relation() throws InterruptedException
+	public void relation(String Relation) throws InterruptedException
 	{
 		Select options= new Select(relation);
-		Thread.sleep(2000);
-		//options.selectByVisibleText("Father");
-		options.selectByIndex(1);
+		options.selectByVisibleText(Relation);
+		
 	}
 	public void next_button()
 	{
@@ -232,20 +277,28 @@ public class Student_Creation extends BasePage
 	
 	
 	//Actions for Address details
-	public void address()
+	public void address(String Address_Line1, String Address_Line_2,
+    		String City, String	State, String Pincode, String Country)
 	{
-		line_1.sendKeys("201");
-		line_2.sendKeys("Near Br-Hitech Theatre");
-		city.sendKeys("Hyderabad");
-		state.sendKeys("Telangana");
-		pin.sendKeys("500081");
-		country.sendKeys("India");
+		line_1.sendKeys(Address_Line1);
+		line_2.sendKeys(Address_Line_2);
+		city.sendKeys(City);
+		state.sendKeys(State);
+		pin.sendKeys(Pincode);
+		country.sendKeys(Country);
 	}
-	public void sumbit_final() throws InterruptedException
+	/*public void submit_final() throws InterruptedException
 	{
 		Thread.sleep(2000);
 		submit_final.click();
+	}*/
+	public void submit_final() 
+	{
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.elementToBeClickable(submit_final));
+	    submit_final.click();
 	}
+	
 	public void Final_Validation()
 	{
 		if(add_student.isEnabled()==true)

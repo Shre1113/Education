@@ -5,12 +5,15 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class Excel_Reader_withCellTypeHandling  {
+public class Excel_Reader_withCellTypeHandling  
+{
 
-    public static void main(String[] args) {
-        try {
+    public static void main(String[] args) 
+    {
+        try 
+        {
             FileInputStream file = new FileInputStream(new File("C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\FaceifyEdu\\\\Excels\\\\Student_Creation_Page_TestData.xlsx"));
-
+        	
             // Create Workbook instance holding reference to .xlsx file
             Workbook workbook = new XSSFWorkbook(file);
 
@@ -18,19 +21,26 @@ public class Excel_Reader_withCellTypeHandling  {
             Sheet sheet = workbook.getSheetAt(0);
 
             // Iterate through each row one by one
-            for (Row row : sheet) {
+            for (Row row : sheet) 
+            {
                 // For each row, iterate through all the columns
-                for (Cell cell : row) {
-                    if (cell != null) {
+                for (Cell cell : row) 
+                {
+                    if (cell != null) 
+                    {
                         // Check the cell type and act accordingly
-                        switch (cell.getCellType()) {
+                        switch (cell.getCellType()) 
+                        {
                             case STRING:
                                 System.out.println("String value: " + cell.getStringCellValue());
                                 break;
                             case NUMERIC:
-                                if (DateUtil.isCellDateFormatted(cell)) {
+                                if (DateUtil.isCellDateFormatted(cell)) 
+                                {
                                     System.out.println("Date value: " + cell.getDateCellValue());
-                                } else {
+                                } 
+                                else 
+                                {
                                     System.out.println("Numeric value: " + cell.getNumericCellValue());
                                 }
                                 break;
@@ -46,7 +56,9 @@ public class Excel_Reader_withCellTypeHandling  {
                             default:
                                 System.out.println("Unknown cell type");
                         }
-                    } else {
+                    } 
+                    else 
+                    {
                         System.out.println("Null cell");
                     }
                 }
@@ -54,7 +66,9 @@ public class Excel_Reader_withCellTypeHandling  {
 
             file.close();
             workbook.close();
-        } catch (IOException e) {
+        } 
+        catch (IOException e) 
+        {
             e.printStackTrace();
         }
     }

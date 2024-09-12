@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataDriven.loginTest">
+      <class name="TestCases.Gaurdian_creation">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="loginTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="Guardian"/>
         </methods>
-      </class> <!-- DataDriven.loginTest -->
+      </class> <!-- TestCases.Gaurdian_creation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

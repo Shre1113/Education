@@ -67,7 +67,7 @@ public class BaseTest
 		
 	     // Initialize and set WebDriver in ExtentReportUtility
 		
-       // extentReportUtility = new ExtentReportUtility();
+     //  extentReportUtility = new ExtentReportUtility();
         extentReportUtility.setWebDriver(driver);
 		
 	}
@@ -119,3 +119,4 @@ public class BaseTest
 	}
 
 }
+

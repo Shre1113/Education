@@ -13,9 +13,8 @@ public class Log_In extends BaseTest
 	{
 		
 		LoginPage LP= new LoginPage(driver);
-		
-	
-		LP.UserName();
+		   
+	    LP.UserName();
 		LP.Password();
 		LP.sumbit();
 		

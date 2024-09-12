@@ -90,6 +90,7 @@ public class ExtentReportUtility implements ITestListener {
         // Create a new test entry in the report
         test = extent.createTest(result.getName());
         test.pass("Test Passed");
+        
         logger.info("Test " + result.getName() + " passed");
     }
 

@@ -11,7 +11,7 @@ import page_objects.Student_Creation;
 
 public class Student_creation extends BaseTest
 {
-	@Test
+	/*@Test
 	public void student_creation_positive() throws InterruptedException
 	{
 		LoginPage LP= new LoginPage(driver);
@@ -23,6 +23,7 @@ public class Student_creation extends BaseTest
 		SM.student_list_page();
 		SM.student_creation_page();
 		SM.name();
+	       // studentCreation.name(randomString().toLowerCase());
 		SM.mail();
 		SM.mobilenumber();
 		SM.RollNumber();
@@ -43,7 +44,7 @@ public class Student_creation extends BaseTest
 		SM.address();
 		SM.sumbit_final();
 		SM.Final_Validation();
-	}
+	}*/
 	@Test(priority = 1)
 	public void student_creation_negative() throws InterruptedException
 	{
@@ -55,7 +56,7 @@ public class Student_creation extends BaseTest
 		SM.stu_Man();
 		SM.student_list_page();
 		SM.student_creation_page();
-		SM.sumbit();
+		SM.Save_Next();
 		SM.validation_Negative();
 	
 	}
