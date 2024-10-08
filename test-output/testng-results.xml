@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T18:50:01 IST" name="Default suite" finished-at="2024-09-11T18:50:13 IST" duration-ms="11757">
+  <suite started-at="2024-09-30T11:44:56 IST" name="Default suite" finished-at="2024-09-30T11:46:55 IST" duration-ms="118949">
     <groups>
     </groups>
-    <test started-at="2024-09-11T18:50:01 IST" name="Default test" finished-at="2024-09-11T18:50:13 IST" duration-ms="11757">
-      <class name="TestCases.Gaurdian_creation">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Gaurdian_creation@342c38f8]" started-at="2024-09-11T18:50:02 IST" name="setup" finished-at="2024-09-11T18:50:04 IST" duration-ms="2789" status="PASS">
+    <test started-at="2024-09-30T11:44:56 IST" name="Default test" finished-at="2024-09-30T11:46:55 IST" duration-ms="118949">
+      <class name="TestCases.Hostel_BulkAllotment">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:44:57 IST" name="setup" finished-at="2024-09-30T11:45:00 IST" duration-ms="2613" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,410 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Guardian()[pri:0, instance:TestCases.Gaurdian_creation@342c38f8]" started-at="2024-09-11T18:50:04 IST" name="Guardian" finished-at="2024-09-11T18:50:10 IST" duration-ms="5292" status="PASS">
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:00 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:45:06 IST" duration-ms="6827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Spiros]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Guardian -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Gaurdian_creation@342c38f8]" started-at="2024-09-11T18:50:10 IST" name="teardown" finished-at="2024-09-11T18:50:13 IST" duration-ms="3352" status="PASS">
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:06 IST" name="teardown" finished-at="2024-09-30T11:45:10 IST" duration-ms="3209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- TestCases.Gaurdian_creation -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:10 IST" name="setup" finished-at="2024-09-30T11:45:12 IST" duration-ms="2440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:12 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:45:19 IST" duration-ms="6536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Panagiotis]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:19 IST" name="teardown" finished-at="2024-09-30T11:45:22 IST" duration-ms="3143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:22 IST" name="setup" finished-at="2024-09-30T11:45:24 IST" duration-ms="2374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:24 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:45:31 IST" duration-ms="6721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nikos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:31 IST" name="teardown" finished-at="2024-09-30T11:45:34 IST" duration-ms="3217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:34 IST" name="setup" finished-at="2024-09-30T11:45:36 IST" duration-ms="2309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:36 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:45:43 IST" duration-ms="6874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Konstantinos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:43 IST" name="teardown" finished-at="2024-09-30T11:45:46 IST" duration-ms="3149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:46 IST" name="setup" finished-at="2024-09-30T11:45:51 IST" duration-ms="4328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:45:51 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:46:00 IST" duration-ms="9508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ioannis]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:00 IST" name="teardown" finished-at="2024-09-30T11:46:04 IST" duration-ms="3234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:04 IST" name="setup" finished-at="2024-09-30T11:46:06 IST" duration-ms="2507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:06 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:46:13 IST" duration-ms="6923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Georgios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:13 IST" name="teardown" finished-at="2024-09-30T11:46:16 IST" duration-ms="3200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:16 IST" name="setup" finished-at="2024-09-30T11:46:18 IST" duration-ms="2211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:18 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:46:25 IST" duration-ms="6578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dimitrios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:25 IST" name="teardown" finished-at="2024-09-30T11:46:28 IST" duration-ms="3234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:28 IST" name="setup" finished-at="2024-09-30T11:46:32 IST" duration-ms="3565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:32 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:46:39 IST" duration-ms="7213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Christos]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:39 IST" name="teardown" finished-at="2024-09-30T11:46:42 IST" duration-ms="3256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:42 IST" name="setup" finished-at="2024-09-30T11:46:45 IST" duration-ms="2572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="hosteldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:45 IST" name="hosteldata" data-provider="HostelData" finished-at="2024-09-30T11:46:51 IST" duration-ms="6542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Block 4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1st Floor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Alexander]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hosteldata -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Hostel_BulkAllotment@ffaa6af]" started-at="2024-09-30T11:46:51 IST" name="teardown" finished-at="2024-09-30T11:46:55 IST" duration-ms="3181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.Hostel_BulkAllotment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

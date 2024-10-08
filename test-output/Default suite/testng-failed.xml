@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.Gaurdian_creation">
+      <class name="TestCases.Hostel_BulkAllotment">
         <methods>
           <include name="teardown"/>
+          <include name="hosteldata" invocation-numbers="1 5"/>
           <include name="setup"/>
-          <include name="Guardian"/>
         </methods>
-      </class> <!-- TestCases.Gaurdian_creation -->
+      </class> <!-- TestCases.Hostel_BulkAllotment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

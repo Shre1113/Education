@@ -50,15 +50,15 @@ public class Parent_creation extends BasePage
 	}
 	public void Guardian_name()
 	{
-		guardian_name.sendKeys("srinivas");
+		guardian_name.sendKeys("srinivas_one");
 	}
 	public void Mobile_number()
 	{
-		mobile_number.sendKeys("9912123670");
+		mobile_number.sendKeys("8812123670");
 	}
 	public void Email_address()
 	{
-		email_address.sendKeys("srinivas@gmail.com");
+		email_address.sendKeys("srinivas_one@gmail.com");
 	}
 	public void Occupation()
 	{
@@ -66,8 +66,8 @@ public class Parent_creation extends BasePage
 	}
 	public void Attachment()
 	{
-		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		//wait.until(ExpectedConditions.elementToBeClickable(attachments));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(attachments));
 		attachments.sendKeys("C:\\Users\\Faciefy_edu\\Screenshot 2024-03-27 105154.png");
 		
 	}
