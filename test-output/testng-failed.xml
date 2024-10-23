@@ -6,7 +6,7 @@
       <class name="TestCases.Hostel_BulkAllotment">
         <methods>
           <include name="teardown"/>
-          <include name="hosteldata" invocation-numbers="1 5"/>
+          <include name="hosteldata" invocation-numbers="0 76 95 112 131 132"/>
           <include name="setup"/>
         </methods>
       </class> <!-- TestCases.Hostel_BulkAllotment -->

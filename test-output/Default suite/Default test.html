@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>235/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 30 11:44:56 IST 2024</td>
+<td>Started on:</td><td>Thu Oct 17 15:52:56 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>118 seconds (118949 ms)</td>
+<tr><td>Total time:</td><td>2871 seconds (2871212 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,604 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2101, N.PAVANI</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 2101
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at page_objects.Hostel_Management.room(Hostel_Management.java:121)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace379776337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace379776337'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 2101
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at page_objects.Hostel_Management.room(Hostel_Management.java:121)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5008, S.AFREEN </td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]&quot;}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f394ac04d223a43b96924e7e102572a, findElement {using=xpath, value=(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53576}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53576/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f394ac04d223a43b96924e7e102572a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at page_objects.Hostel_Management.student_selection(Hostel_Management.java:134)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:39)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace877553242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace877553242'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]&quot;}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2f394ac04d223a43b96924e7e102572a, findElement {using=xpath, value=(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53576}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53576/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f394ac04d223a43b96924e7e102572a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at page_objects.Hostel_Management.student_selection(Hostel_Management.java:134)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:39)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5306, C.NAGAMANI</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 5306
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at page_objects.Hostel_Management.room(Hostel_Management.java:121)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:37)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace185815653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace185815653'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 5306
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at page_objects.Hostel_Management.room(Hostel_Management.java:121)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:37)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5206, M.SUCHARITHA </td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]&quot;}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07f2f5b1ab6c4a6f9ea1f5ea265e554e, findElement {using=xpath, value=(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54328/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07f2f5b1ab6c4a6f9ea1f5ea265e554e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at page_objects.Hostel_Management.student_selection(Hostel_Management.java:134)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:39)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace867384378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace867384378'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]&quot;}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [07f2f5b1ab6c4a6f9ea1f5ea265e554e, findElement {using=xpath, value=(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54328/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 07f2f5b1ab6c4a6f9ea1f5ea265e554e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at page_objects.Hostel_Management.student_selection(Hostel_Management.java:134)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:39)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5109, N.SRI CHARITHA </td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]&quot;}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed97eccff3ccdc23cda43a754cf4ffcf, findElement {using=xpath, value=(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53974}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53974/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed97eccff3ccdc23cda43a754cf4ffcf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at page_objects.Hostel_Management.student_selection(Hostel_Management.java:134)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:39)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1130635343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1130635343'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]&quot;}
+  (Session info: chrome=129.0.6668.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed97eccff3ccdc23cda43a754cf4ffcf, findElement {using=xpath, value=(//span[@class=&apos;chakra-checkbox__control css-1ydjfm6&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53974}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53974/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed97eccff3ccdc23cda43a754cf4ffcf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.click(Unknown Source)
+	at page_objects.Hostel_Management.student_selection(Hostel_Management.java:134)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:39)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5306, G MEGHANA</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 5306
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at page_objects.Hostel_Management.room(Hostel_Management.java:121)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:37)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2079224352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079224352'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 5306
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at page_objects.Hostel_Management.room(Hostel_Management.java:121)
+	at TestCases.Hostel_BulkAllotment.hosteldata(Hostel_BulkAllotment.java:37)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,47 +673,1177 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Nikos</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5106, K.MEGHANA</td>
 <td></td>
 <td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Georgios</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2208, S.MUSKHAN</td>
 <td></td>
 <td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Dimitrios</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5106, SHAIK ASIN</td>
 <td></td>
 <td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Panagiotis</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5309, B.AMRUTHA SREE</td>
 <td></td>
 <td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Konstantinos</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2102, P.MANISHA</td>
 <td></td>
 <td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Spiros</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3107, J.SHALINI</td>
 <td></td>
 <td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Ioannis</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3002, Y.LEELAVATHI</td>
 <td></td>
-<td>9</td>
+<td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Christos</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3104, V.GNANESHWARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3103, V.KHYATHI VARDHINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5105, B.VENKATA HARIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3101, D.LIKHITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5204, A.NIHARIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2209, M.INDU</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5202, M.HARIKA</td>
 <td></td>
 <td>7</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
 <tr>
-<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 4, 1st Floor, 101, Alexander</td>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3104, T.VENKATA SAI DIVYA SREE</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2203, KOMMERA DIVYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5304, B.PAVITHRA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2214, Y.NEERAJA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3109, S.SAFIYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2216, O.KRISHNAVENI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2217, S.K.MAMATHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 3rd, 3206, JERADODDI MOUNIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2007, KEERTHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2214, M.INDIRA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5202, M.JAHANAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3113, SHAIK SHAHEEN</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5305, K VARSHITHA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3108, R BHANU</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2213, B.AVULA. PUJITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3113, N.HEMALATHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2207, P.SREEVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2118, B.AKHILA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2214, P.SIVAMMA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2213, P.V.JYOTHSNA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3014, S.POOJITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3113, B. CHANDANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5102, O.SALONI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2210, T.SHIVA PARVATHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2210, N.NAGAMANISHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3001, N.SRAVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2204, K.BHUMIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5108, B SUSHMA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2204, THANUJA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2219, J.NAVEENA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3107, K.POOJITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3102, M.POOJITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2005, D.MOULABI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2102, V.NIKHILA</td>
+<td></td>
+<td>10</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5204, R.SNEHALATHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2208, A.PRATHYUSHA</td>
+<td></td>
+<td>14</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2118, Y.HEMALATHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2204, K.JASHNAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5108, V.PAVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5002, P.SINIDHU</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3010, A.SAI HARI CHANDHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5308, C SAI GNANA SIRI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2214, P.MANASA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3010, K.NAVYA SREE</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 3rd, 3206, K RUKMINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3007, C PREETHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2206, G.RADHIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3108, S.KRANTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5208, G.R PRIYA DHURGA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3013, C RAJYA LAKSHMI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3103, K.DEEPIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5108, M BRUNDHAVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5007, K.GIRIJA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2004, B.SINDHU</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5208, HEMA VARSHITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2112, B.PRASANNA KUMARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5001, V.AMRUTHA VARSHINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3014, G.YASHASWINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2212, D.PALLAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5208, K.USHA SREE</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2112, K.HARSHAVARDHINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5301, J. KEERTHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3103, K.SRAVANI</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3005, K UMA MAHESWARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3006, M.SHANTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2211, S.VENKATA CHATHURYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2118, K.SRAVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3102, P.AISHWARYA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5207, S.NAFIYA  SULTHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2007, V.AKHILA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3102, S.SINDHU</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2211, M.DIVYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3109, B.AASRITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5006, SAI NIKHITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3001, J.SINDHURA RANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2202, B.SAILAJA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3113, G.VISHNU PRIYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5008, J.SHREYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5206, M.YERRAMMA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3102, Y.RENUKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2210, N.VASANTHI</td>
+<td></td>
+<td>10</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5205, G.MEGHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5102, J.MOHANA PRIYA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5102, G.BHAGYARANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5201, N.MADHU SREE</td>
+<td></td>
+<td>8</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2004, A.INDU</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5004, O.RAJYALAKSHMI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3002, KATHA SAI KALPANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2217, G.PRAHARSHA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5206, M.MANIJA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2118, T.HARIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2219, P.Sai Sravanthi</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 3rd, 3206, A NEHA DEEPIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3113, K.SREELAKSHMI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2208, K.SUSMITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2217, P.MAHALAKSHMI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3014, N.PRATHYUSHA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3014, K.SHAHEENAZ</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3001, K.MANASA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 3rd, 3202, A.GARI RENUKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5308, B.NESE PRIYANKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3011, VENNEGALA VYSHNAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2208, K.B.ROJAMANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2210, K.RAKSHITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3009, K BHARATHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3011, K. VYSHNAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2112, P.CHANDHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2112, B.DEEPTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5203, S.SHARAFF SAFIYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5106, B.HARIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3109, CHAKALI SRAVANTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5207, TABASSUM TAJ</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3110, SANGU VYSHNAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3008, K.SINDHUJA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5202, T.HARSHINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2004, B.AKHILANDESWARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5106, V.N SRI HARSHITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5304, V.SAI RUPA SRI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3010, D.SAI MOUNIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3005, AKAVEETI SUPRIYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5201, C SANIA SULTHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5004, K.SAI MANASA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2009, B.GOWRIPRIYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3103, S.HARITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5204, Y.SAI ANJALI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2204, S RACHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2204, D.SHIRISHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2215, K.ANUSHA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2007, G.ANUSHA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2213, R.ANITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2007, B.KAVYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3013, S MOHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5105, K ANKITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5301, M.JAYASRI</td>
+<td></td>
+<td>12</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5003, C.POOJITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3102, G.VASAVI</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3010, P.LAKSHMI PRASANNA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3001, KALVA GNANA DEEPTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5308, G.ROOPA PAVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3009, K.MANASA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5107, R.MYTHRI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2112, K.SIVA NANDHINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5006, JOGI UDAYESRE</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2206, M.CHANDRAKALA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2005, K.RUPA SRI</td>
+<td></td>
+<td>11</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5203, P.HEMALATHA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3107, SHANTHI MANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2215, B.POOJA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3014, M.SANDHYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2112, K.DEVISHWARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5003, B.LIKITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5005, B.JYOTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5106, K.AKSHAYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3107, A.SANDHYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2219, B.LAKSHMI CHINMAI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5109, S.UZMA TAHSEEN</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3103, AVULA MANASA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2206, T.RANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5303, P.NEELAVATHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2216, C.SAI KEERTHANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2215, Z.YASHMIN</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5005, V.VAHITHAVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5304, LAKSHMI KRUTHIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2215, A.NEELIMA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3108, G.YASSASRI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5309, M SHANTHI JYOTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2217, G.SAI LIKHITHA</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3102, M.HASWITHA PREETHAM</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5309, J.KOUSALYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2210, B.VANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5008, Y.VAISHNAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5006, C.HARIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3008, N AMRUTHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5305, V.SRIVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2102, P.SREEDEVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5305, K. SUSMITHA REDDY</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3002, V THRIVENI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2208, C.JYOSHNA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3008, P.BINDU MADHAVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3014, SHAIMA SAFATH</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2215, P.LAHARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5204, V.SAHITHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2216, A.MADHU HARSHITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2212, A.VARSHINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3012, K.HEMALATHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5109, V.VARSHITHA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5309, B SRAVANTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2202, N.ESTHER RANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2216, V.PRAVEENA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 1st, 5003, K.TEJASWINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2004, B.KEERTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3103, G.NEERAJA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 2nd, 3107, K.MOUNA PRIYA</td>
+<td></td>
+<td>8</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5208, C.LAHARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3003, S MANASA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5308, B.MAMATHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5107, B KRISHNA PRIYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 2nd, 2102, B.SUSMITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2216, P.SWETHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2208, P.PRAVALIKA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 4th, 5301, SHAIK GOUSHIYA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5206, E.PRIYANKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2004, M. LINGESWARI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2005, K.AKHILA</td>
+<td></td>
+<td>9</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2005, V.UDAYA SREE</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2213, K.GAYATHRI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5108, A.KAVITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3003, K.SHIVANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2007, T.RENUKA DEVI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2210, S.JYOSHNA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2214, K.TEJASWINI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2211, G.MOHANA ROOPA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 3, 1st, 3003, V MANASA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2204, L.MOUNIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 2nd, 5105, Y.LAVYANA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2214, V.VANI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2217, S.GREESHMA NANDHINI</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2209, D.DEEPIKA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 5, 3rd, 5202, N SAI DEEKSHITHA</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 3rd, 2219, N.SRAVANTHI</td>
+<td></td>
+<td>6</td>
+<td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>
+<tr>
+<td title='TestCases.Hostel_BulkAllotment.hosteldata()'><b>hosteldata</b><br>Test class: TestCases.Hostel_BulkAllotment<br>Parameters: 2024, Block 2, 1st, 2004, D.ASHWINI</td>
 <td></td>
 <td>6</td>
 <td>TestCases.Hostel_BulkAllotment@ffaa6af</td></tr>

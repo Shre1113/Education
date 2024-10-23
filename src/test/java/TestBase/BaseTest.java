@@ -60,7 +60,7 @@ public class BaseTest
 	    	driver=new ChromeDriver();
 	    }
 	    //driver= new ChromeDriver();
-		driver.navigate().to("https://testrnitschool.faceify.app/e");
+		driver.navigate().to("https://rmjit.faceify.app/e");
 		//driver.get(rb.getString("appURL"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
@@ -74,7 +74,7 @@ public class BaseTest
 	@AfterMethod()
 	public void teardown() throws InterruptedException, IOException
 	{
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.close();
 	}
 	

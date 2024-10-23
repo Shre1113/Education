@@ -56,9 +56,9 @@ public class Hostel_BulkAllotment extends BaseTest
 
 	        Object[][] data = new Object[rowCount - 1][colCount];
 
-	        for (int i = 1; i < rowCount; i++) 
+	        for (int i = 1; i < rowCount; i++)
 	        {
-	            for (int j = 0; j < colCount; j++) 
+	            for (int j = 0; j < colCount; j++)
 	            {
 	                data[i - 1][j] = ExcelUtils.getCellData(i, j);
 	            }
